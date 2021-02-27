@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk/native/jni/external/busybox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk/native/jni/external/bzip2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk/native/jni/external/dtc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk/native/jni/external/lz4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk/native/jni/external/mincrypt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk/native/jni/external/nanopb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk/native/jni/external/pcre" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk/native/jni/external/selinux" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk/native/jni/external/xz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Magisk/tools/termux-elf-cleaner" vcs="Git" />
+  </component>
+</project>
