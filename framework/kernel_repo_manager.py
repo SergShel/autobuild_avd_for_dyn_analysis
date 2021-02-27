@@ -11,6 +11,7 @@ class KernelRepoManager:
         self.branch = branch
         self.threadcount = multiprocessing.cpu_count() * 2
         self.repo_path = '/home/' + getpass.getuser() + '/repos/kernel_source/'
+        # self.repo_path = '/home/sergey/Desktop/kernel_module/kernel_module/mount/kernel_source/'
         self.drivers_path = self.repo_path + 'goldfish/drivers/'
         self.kmodule_name = 'helloworld'
         self.kConfigPath = self.drivers_path + 'Kconfig'

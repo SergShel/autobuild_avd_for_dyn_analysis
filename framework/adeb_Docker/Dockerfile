@@ -1,5 +1,5 @@
 # We start with our base OS, Ubuntu 20.04 with Ubuntu 18.04 adeb works incorrect
-FROM ubuntu:20.04
+FROM ubuntu:latest
 
 MAINTAINER Siarhei Sheludzko
 
@@ -23,6 +23,9 @@ RUN apt-get -y install git-core gnupg flex bison build-essential zip curl zlib1g
 			g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev \ 
 			lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig rsync python python3 \
 			adb qemu-user-static debootstrap sudo
+
+RUN apt-get -y update
+RUN apt-get -y upgrade
 
 ARG USER=docker
 ARG UID=1000

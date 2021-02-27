@@ -7,7 +7,7 @@ class EmuManager:
     def __init__(self, arch='x86_64'):
         self.arch = arch
         self.lang = 'eng'
-        self.repo_path = '/home/' + getpass.getuser() + '/aosp'
+        self.repo_path = '/home/' + getpass.getuser() + '/repos/aosp'
 
 
     def start_emu(self):

@@ -10,7 +10,8 @@ class RepoManager:
         self.repo_url = 'https://android.googlesource.com/platform/manifest'
         self.branch = branch
         self.threadcount = multiprocessing.cpu_count() * 2
-        self.repo_path = '/home/' + getpass.getuser() + '/aosp'
+        # self.repo_path = '/home/' + getpass.getuser() + '/aosp'
+        self.repo_path = '/home/' + getpass.getuser() + '/repos/aosp'
 
 
     def repo_sync(self):

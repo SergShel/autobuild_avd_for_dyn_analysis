@@ -48,3 +48,17 @@ class FridaManager:
             os.remove(self.folder_path + self.f_server_name)
         rc = subprocess.run('unxz ' + self.folder_path + self.f_server_name + '.xz', shell=True, stdout=subprocess.PIPE, text=True)
         print('Archive is extracted. Path to frida-server: ' + self.folder_path + self.f_server_name)
+
+    def install_server(self):
+        wd = os.getcwd()
+        subprocess.run('cp ' + self.folder_path + self.f_server_name
+                       + ' ' + self.folder_path + 'frida-server', shell=True)
+        subprocess.call(('adb root'), shell=True)
+        subprocess.call(('adb push ' + self.folder_path + 'frida-server /data/local/tmp/'), shell=True)
+        subprocess.call(('adb shell "chmod 755 /data/local/tmp/frida-server"'), shell=True)
+        print('Frida Sever was successfully installed on the device in location /data/local/tmp/frida-server')
+        self.start_server()
+
+    def start_server(self):
+        subprocess.call(('adb shell "/data/local/tmp/frida-server &" &'), shell=True)
+        print('Frida Server was started successfully :)')
