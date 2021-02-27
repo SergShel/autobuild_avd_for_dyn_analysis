@@ -29,7 +29,7 @@ if __name__ == '__main__':
    kernelRepoManager.add_helloworld_ksource()
    kernelRepoManager.set_Kconfig()
    kernelRepoManager.set_Makefile()
-   kernelRepoManager.set_defconfig()
+   # kernelRepoManager.set_defconfig()
    kernelRepoManager.compile_kernel()
    
 
@@ -52,8 +52,8 @@ if __name__ == '__main__':
    magiskManager.start_magisk_deamon()
 
    """
-      Frida Server section
-      """
+   Frida Server section
+   """
    fridaManager = frida_manager.FridaManager(architecture=arch)
    fridaManager.download_frida_server()
    fridaManager.extract_archive()
