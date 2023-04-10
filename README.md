@@ -14,23 +14,23 @@ Alternatively you can install them as part of Android Studio (same link)
 
 To start the Build of AVD: python framework/main.py <br />
 This will: <br />
-  *init and sync AOSP-Repo (branch='android-10.0.0_r41') in ~/repos/aosp <br />
-  *create Docker-Container for compiling of AOSP and Kernel <br />
-  *compile AOSP in Container <br />
-  *init and sync Kernel-Repo (branch='q-goldfish-android-goldfish-4.14-dev') in ~/repos/kernel_source <br />
-  *save "hello-world"-Kernel module source code in Kernel-Repo and set the configs <br />
-  *compile kernel and "hello-world"-kernel module in Container <br />
-  *start AVD <br />
-  *push of hello.ko (compiled kernel module) to /data/ on AVD <br />
-  *clone Magisk Repo <br />
-  *set config to build Magisk <br />
-  *build NDK <br />
-  *build Magisk and MagiskManager <br />
-  *install Magisk and MagiskManager on AVD <br />
-  *start Magisk-Daemon <br />
-  *find the latest version of Frida server for Android x86_64 on the release page and download it <br />
-  *install frida_server on AVD <br />
-  *clone adeb repo <br />
+  * init and sync AOSP-Repo (branch='android-10.0.0_r41') in ~/repos/aosp <br />
+  * create Docker-Container for compiling of AOSP and Kernel <br />
+  * compile AOSP in Container <br />
+  * init and sync Kernel-Repo (branch='q-goldfish-android-goldfish-4.14-dev') in ~/repos/kernel_source <br />
+  * save "hello-world"-Kernel module source code in Kernel-Repo and set the configs <br />
+  * compile kernel and "hello-world"-kernel module in Container <br />
+  * start AVD <br />
+  * push of hello.ko (compiled kernel module) to /data/ on AVD <br />
+  * clone Magisk Repo <br />
+  * set config to build Magisk <br />
+  * build NDK <br />
+  * build Magisk and MagiskManager <br />
+  * install Magisk and MagiskManager on AVD <br />
+  * start Magisk-Daemon <br />
+  * find the latest version of Frida server for Android x86_64 on the release page and download it <br />
+  * install frida_server on AVD <br />
+  * clone adeb repo <br />
   *create Docker container for building rootfs of adeb <br />
   *build adeb rootfs in container and install it on AVD <br />
   *install neccessary dependencies inside of adeb and build BCC there (!!! in actual implementation the compiling of bcc works incorrect. It will be fixed!!!) <br /> <br />
